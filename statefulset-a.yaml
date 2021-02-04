@@ -35,6 +35,8 @@ spec:
             - containerPort: 9042
               name: cql
           env:
+            - name: LOCAL_JMX
+              value: "no"
             - name: CASSANDRA_SEEDS
               value: cassandraa-0.cassandraa.c7a.svc.cluster.local,cassandrab-0.cassandrab.c7a.svc.cluster.local
             - name: MAX_HEAP_SIZE
